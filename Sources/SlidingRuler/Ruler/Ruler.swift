@@ -55,7 +55,7 @@ struct Ruler: View, Equatable {
     static func ==(lhs: Self, rhs: Self) -> Bool {
         lhs.step == rhs.step &&
         lhs.cells.count == rhs.cells.count &&
-        (!lhs.hasMarks || lhs.markOffset == rhs.markOffset)
+        lhs.markOffset == rhs.markOffset
     }
 }
 
